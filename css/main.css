@@ -1,0 +1,753 @@
+/*********
+* 基本默认样式
+***********/
+html {
+	font-size: 62.5%;
+	text-decoration: none;
+	font-family: "微软雅黑";
+}
+
+::selection{
+	background-color: #b3d4fc;
+	text-shadow: none;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+
+body {
+	font-size: 1.2rem;
+	line-height: 1.5;
+
+}
+
+a {
+	color: #666;
+	text-decoration: none;
+}
+a:hover,a:active{
+	color: #0ae;
+	text-decoration: underline;
+}
+
+/*********
+* 页面样式
+***********/
+
+.top {
+	background: #282828;
+	width: 100%;
+}
+
+.top span {
+	display: inline-block;
+	font-size: 1rem;
+	color: #FFFFFF;
+	padding: 0.5rem;
+	letter-spacing:0.1rem;
+}
+
+.top ul {
+	float: right;
+	padding-right: 1rem;
+}
+
+.top li {
+	float:left; 
+	
+}
+
+.top li+li {
+	border-left: 0.1rem solid #FFFFFF;
+	
+}
+
+.top li a {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1rem;
+	color: #FFFFFF;
+	padding: 0.5rem 1rem 0.5rem 1rem ;
+	letter-spacing:0.1rem;
+}
+
+@media only screen and (max-width: 800px) {
+.top li a {	
+	padding: 0.5rem 1.5rem 0.5rem 1.5rem ;	
+}
+.brand {
+	display: none;
+}
+.main ul{
+	float: none;
+	margin: 0 auto;
+}
+
+}
+@media only screen and (max-width: 481px) and (max-width: 800px) {
+	
+}
+@media only screen and (max-width: 480px) {
+.top span {
+	display: none;
+}
+.top ul li:nth-child(3) {
+	display: none; 
+	
+}
+
+	
+}
+
+.main{
+	width: 100%;
+	height: 4.5rem;
+	background: #EAEAEA;
+
+}
+
+.main ul{
+	float: right;
+	padding-right: 1rem;
+}
+
+.main li{
+	float:left; 
+}
+
+.main li a {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.7rem;
+	line-height: 4.5rem;
+	color: #303030;
+	padding: 0 1.5rem;
+	letter-spacing:0.2rem;
+}
+
+.main li a:hover{
+	color: #F7FF00;
+	text-shadow: 0.1rem 0.1rem 0.1rem #000000;
+}
+
+@media only screen and (max-width: 800px) {
+
+.main ul{
+	float: none;
+	width: 44rem;
+	margin: 0 auto;
+	padding-right: 0;
+}
+.main li a {
+	padding: 0 1.5rem;
+	font-size: 1.4rem;
+	
+}
+
+}
+@media only screen and (max-width: 480px) {
+.main  ul li:nth-child(1){
+	display: none; 
+}
+.main ul{	
+	width: 31rem;
+}
+.main li a {
+	padding: 0 1rem;
+	font-size: 1.2rem;
+	
+}	
+}
+
+.transaction {
+	background: #72675c;
+	width: 100%;
+	
+}
+
+.transaction .transaction-content {
+	margin: 0 auto;
+	max-width: 90%;
+	
+}
+
+.trans-date {
+	display: inline-block;
+	padding: 0 1rem;
+}
+
+.trans-date .trans-money {
+	background: #FFFFFF;
+	color: #FFC900;
+	text-shadow: 0.1rem 0.1rem 0.1rem #000000;
+	padding: 0.2rem 0.5rem;
+	box-shadow:0.1rem 0.1rem 0.1rem #333333 inset;
+	border-radius:0.1rem;
+}
+
+.trans-date span {
+	font-size:1.3rem;
+	color: #FFFFFF;
+	letter-spacing:0.1rem;
+	line-height: 4rem;
+}
+
+.trans-report {
+	display: inline-block;
+	float: right;
+}
+.trans-report a{
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: #FFFFFF;
+	line-height: 4rem;
+}
+@media only screen and (max-width: 480px) {
+.transaction .transaction-content {
+	
+	
+ 
+  /*justify-content: center;*/
+  
+	
+}
+.trans-date .trans-money {
+	background: none;
+	color: #FFC900;
+	text-shadow: 0.1rem 0.1rem 0.1rem #000000;
+	padding: 0.2rem 0.5rem;
+	box-shadow:none;
+	border-radius: none;
+}
+.trans-date{
+	display: block;
+	float: none;
+	padding: 0;
+	text-align: center;
+	
+}
+.trans-report {
+	display: block;
+	float: none;
+	text-align: center;
+	
+}
+.trans-report a{
+	text-align: center;
+}
+}
+
+.feature{
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 2rem 0;
+	font-size: 0;
+
+}
+
+.feature .item{
+	display: inline-block;
+	width: calc(33.3333333333% - 3rem);
+	font-size: 1.4rem;
+	padding: 1rem;
+	box-shadow:0rem 0rem 0.5rem #333333;
+	
+}
+
+.feature .item + .item {
+	margin-left: 1.5rem;
+}
+
+.feature .item p{
+	display: inline-block;
+	width: 55%;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	
+}
+
+.feature .item h3{
+	display: inline-block;
+	width: 40%;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+	font-size: 3.3rem;
+	color: #ff9900;
+	letter-spacing: 0.3rem;
+/*	line-height: 8.5rem;*/
+}
+@media only screen and (max-width: 800px) {
+.feature .item h3{
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	
+	font-size: 3.3rem;
+	color: #ff9900;
+	letter-spacing: 0.3rem;
+/*	line-height: 8.5rem;*/
+}
+.feature .item p{
+	display: inline-block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	
+}
+.feature .item{
+	display: inline-block;
+	width: calc(33.3333333333% - 3rem);
+	font-size: 1.4rem;
+	padding: 1rem;
+	box-shadow:0rem 0rem 0.5rem #333333;
+	
+}
+
+.trans-report {
+	display: none;
+	
+	
+}
+}
+@media only screen and (max-width: 481px) and (max-width: 800px) {
+	
+}
+@media only screen and (max-width: 480px) {
+.feature{
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 2rem 0;
+	font-size: 0;
+
+}
+.trans-report {
+	display: block;
+	
+	
+}
+
+.feature .item{
+	display: block;
+	width: 90%;
+	font-size: 1.4rem;
+	padding: 1rem;
+	margin: 1.5rem;
+	box-shadow:0rem 0rem 0.3rem #333333;
+	
+}
+
+.feature .item + .item {
+	margin-left: 1.5rem;
+}
+
+.feature .item p{
+	display: inline-block;
+	width: 55%;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	
+}
+
+.feature .item h3{
+	display: inline-block;
+	width: 40%;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+	font-size: 3.3rem;
+	color: #ff9900;
+	letter-spacing: 0.3rem;
+/*	line-height: 8.5rem;*/
+}	
+	
+}
+
+.notice {
+	width: 90%;
+	margin: 2rem auto;
+	box-shadow:0rem 0rem 0.5rem #333333;
+
+}
+
+
+.notice .artial {
+
+	width: 70%;
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.notice a span {
+	float: left;
+	margin: 0 1rem;
+
+}
+.notice a p {
+	float: left;
+}
+
+.notice a {
+	margin: 1rem;
+}
+
+
+
+
+.notice .more {
+	float: right;
+	color: #DBCC00;
+}
+.notice .new {
+	float: left;
+	width: 70%;
+}
+@media only screen and (max-width: 800px) {
+.notice .artial {
+
+	width: 60%;
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+}
+@media only screen and (max-width: 481px) and (max-width: 800px) {
+.notice .artial {
+
+	width: 70%;
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}	
+}
+@media only screen and (max-width: 480px) {
+.new span:nth-child(2){
+	display: none;
+}
+.notice .new {
+	float: left;
+	width: 70%;
+}
+
+	
+}
+.product{
+	width: 90%;
+	margin: 2rem auto;
+	border-top: 2px solid #FF0000;
+	box-shadow: 0 0 4px #ccc;
+}
+.product-title{
+	width: 20%;
+	float: left;
+}
+.product-title h3{
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 3rem;
+	margin-bottom: 4.5rem;
+}
+.product-title em{
+	display: block;
+	font-style: normal;
+	line-height: 2.5rem;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.product-content{
+	width: 80%;
+	float: left;
+	padding-top: 1rem;
+}
+
+
+.product-content .item{
+	padding: 2rem 0;
+	
+	width: 100%;
+	border:1px solid #EAEAEA;
+	display: block;
+  
+    
+	
+}
+.product-content .item .date{
+	float: left;
+	width: 25%;
+	text-align: center;
+
+}
+.product-content .item .date span{
+	font-size: 2.8rem;
+	color: #A1A1A1;
+	
+}
+.product-content .item .date span em{
+	padding: 0  0.6rem;
+	font-size: 1.5rem;
+	color: #000000;
+	
+}
+.product-content .item .profit{
+	float: left;
+	width: 25%;
+	text-align: center;
+	line-height: 2rem;
+}
+.product-content .item .profit p{
+	margin: 0;
+	font-size: 1.4rem;
+}
+.product-content .item .profit span{
+	font-size: 1.7rem;
+	color: #FCD100;
+	letter-spacing: 0.3rem;
+}
+.product-content .item .profit span em{
+	font-size: 1rem;
+	color: #838383;
+	
+}
+.product-content .item .money p{
+	margin: 0;
+	font-size: 1.4rem;
+}
+.product-content .item .money span{
+	font-size: 1.7rem;
+	color: #FCD100;
+	letter-spacing: 0.1rem;
+}
+.product-content .item .money span em{
+	font-size: 1rem;
+	color: #838383;
+	
+}
+
+.product-content .item .money{
+	float: left;
+	width: 25%;
+	text-align: center;
+	line-height: 2rem;
+}
+.product-content .item .buy-button{
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+.product-content .item .buy-button .button{
+	margin: 0 auto;
+	width: 14rem;
+	height: 4.2rem;
+	background: #F9BF00;
+	border-radius: 0.5rem;
+	
+
+}
+.product-content .item .buy-button .button a{
+	font-size: 1.7rem;
+
+	text-align: center;
+	color: #FFFFFF;
+	line-height: 4.2rem;
+
+}
+@media only screen and (max-width: 800px) {
+.product-title{
+	width: 100%;
+	float: none;
+	text-align: center;
+}
+.product-title h3{
+	margin: 0 1rem;
+	display: inline-block;
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.product-title em{
+	display: inline-block;
+	font-style: normal;
+	line-height: 0rem;
+	font-size: 1.3rem;
+	text-align: center;
+
+}
+
+.product-content{
+	width: 100%;
+	float: left;
+	padding-top: 1rem;
+}
+.product-content .item .buy-button .button{
+	margin: 0 auto;
+	width: 10rem;
+	height: 4.2rem;
+	background: #F9BF00;
+	border-radius: 0.5rem;
+	
+
+}
+}
+@media only screen and (max-width: 800px) and(max-width: 481px)  {
+	
+}
+@media only screen and (max-width: 480px) {
+	.product-content .item{
+	padding: 2rem 0;
+	margin: 0 auto;
+	width: 100%;
+	border:1px solid #EAEAEA;
+	display: block;
+  
+    
+	
+}
+.product-content .item .buy-button{
+	clear: both;
+	float: none;
+	width: 70%;
+	text-align: center;
+	padding: 2rem 0;
+	margin: 0 auto;
+}
+.product-content .item .buy-button .button{
+	
+	width: 100%;
+	height: 4.2rem;
+	background: #F9BF00;
+	border-radius: 0.5rem;
+	
+
+}
+.product-content .item .buy-button .button a{
+	font-size: 1.7rem;
+
+	text-align: center;
+	color: #FFFFFF;
+	line-height: 4.2rem;
+
+}
+.product-content .item .date{
+	float: left;
+	width: 33%;
+	text-align: center;
+
+}
+
+.product-content .item .profit{
+	float: left;
+	width: 33%;
+	text-align: center;
+	line-height: 2rem;
+}
+
+
+.product-content .item .money{
+	float: left;
+	width: 33%;
+	text-align: center;
+	line-height: 2rem;
+}
+}
+
+.footer{
+	width: 100%;
+	background: #CFCFCF;
+}
+
+.footer .footer-content{
+	width: 75%;
+	margin: 0 auto;
+
+	
+}
+.footer .footer-content .content{
+
+	text-align: center;
+	margin: 0 auto;
+}
+
+.footer .footer-content ul{
+	width: 15%;
+	display:table;
+	text-align:center;
+	float: left;
+	margin: 3rem 1rem;
+}
+.footer .footer-content .title{
+	font-size: 1.3rem;
+}
+.footer .footer-content ul li{
+	margin: 0.3rem 0;
+}
+
+footer p{
+	text-align: center;
+	margin: 5rem 0;
+}
+
+@media only screen and (max-width: 480px) {
+.footer .footer-content .content ul:nth-child(4){
+	display: none;
+}
+.footer .footer-content .content ul:nth-child(5){
+	display: none;
+}
+.footer .footer-content ul{
+	width: 27%;
+	display:table;
+	text-align:center;
+	float: left;
+	margin: 3rem 1rem;
+}
+
+  
+    
+	
+}
+
+/*********
+* 工具样式
+***********/
+
+.text-hide {
+	font:0/0 a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
+}
+
+.clearfix:after,
+.clearfix:before{
+	content: " ";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
